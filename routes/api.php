@@ -11,4 +11,6 @@
 |
 */
 
-$router->get('/stats', 'CovidApiController');
+$router->get('api/countries', 'CountryController');
+$router->get('api/countries/{slug}', 'DetailController');
+$router->post('api/search', 'SearchController');
