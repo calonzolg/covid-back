@@ -1,24 +1,30 @@
-# Lumen PHP Framework
+This project was bootstrapped with [Laravel Lumen](https://lumen.laravel.com/)
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+## Software requeriments
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+-   PHP >= 7.2
+-   Composer
 
-## Official Documentation
+## Make your .env file 
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
+Run the command in your terminal inside root of the project.
 
-## Contributing
+`cp .env.example .env`
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Run Composer
 
-## Security Vulnerabilities
+Run command 
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+`composer install` 
 
-## License
+will install all dependencies
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Enter rapidapi key token
+
+In the .env file for key `COVID_API_KEY_SECRET` need paste your secret key generate in the rapidapi platform
+
+## Run the server 
+
+Run command in the terminal for run the api 
+
+`php -S localhost:8000 -t public`
