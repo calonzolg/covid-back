@@ -97,7 +97,7 @@ $app->configure('services');
 // $app->register(App\Providers\AuthServiceProvider::class);
 // $app->register(App\Providers\EventServiceProvider::class);
 $app->register(Fruitcake\Cors\CorsServiceProvider::class);
-
+$app->register(Illuminate\Database\Eloquent\LegacyFactoryServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------
